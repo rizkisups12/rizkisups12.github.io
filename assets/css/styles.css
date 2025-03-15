@@ -111,16 +111,30 @@ img {
 }
 
 /*=============== THEME ===============*/
-
+.change-theme {
+  color: var(--first-color);
+}
 
 /*========== Variables Dark theme ==========*/
+body.light-theme {
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: hsl(var(--second-hue), 8%, 35%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: #fff;
+}
 
+.light-theme .scroll-header {
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+}
+
+.light-theme .nav__menu {
+  background-color: hsla(var(--second-hue), 32%, 90%, .8);
+}
 
 /*========== 
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
